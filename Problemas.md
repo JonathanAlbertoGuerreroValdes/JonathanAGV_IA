@@ -37,3 +37,31 @@ Nuestra formula para resolver este ejercicio es la siguiente: **n = 2m + k** con
 
 ## Problema 100 prisioneros
 
+**Secuencia de Percepción y Medida de rendimiento**
+
+Cada caja tiene el numero de esos 100 prisioneros, cada prisionero tiene 50 oportunidades para sacar su numero, en caso de que uno no encuentre su numero **lo fusilan a el y a todos**, y si todos los encontraron todos **sobreviven**
+
+1. Cada prisionero debe abrir primero la caja con su propio número.
+2. Si encuentra su número, bien. Si no, entonces procede al paso 
+3. Una vez que un prisionero no encuentra su número en su caja designada, debe elegir una caja al azar de entre las cajas restantes.
+4. El prisionero debe repetir este proceso hasta que encuentre su número o hasta que haya abierto todas las cajas.
+
+**La estrategia**
+
+Si planteamos lo siguiente:
+
+| Caja 1 | Caja 2 | Caja 3 | Caja 4 | Caja 5 | Caja 6 | Caja 7 | Caja 8 | Caja 9 | Caja 10 |
+|-------|--------|--------|--------|--------|--------|--------|-------|--------|---------|
+| 7   | 2  | 8  | 5 | 1 | 6 |10 | 9| 3|  4|
+
+Si el prisionero uno abre la primera caja se encuentra con el numero 7, el cual no es su número, por lo que se pasa a la casilla/caja 7 y encuentra el 10, asi sigue con la caja del numero de la camiseta, hasta encontrar su número y asi cada uno de los prisioneros hasta encontrar su número.
+
+Teniendo esto en cuenta, planteamos lo siguiente:
+1. Hay 100 cajas para 100 prisioneros y cada uno de ellos tiene 50 oportunidades.
+Por lo que tomaremos N=50 seria **2N**
+2. Si cada preso empieza con su numero de caja, no habria problema.
+
+Ya que hay una **permutación** por lo que, si no se cumple la regla 2, puede fallar. Y tomando este ejemplo puede funionar.
+ Teniendo esto en cuenta la probabilidad de que salga esto es de la siguiente forma:
+ 
+**Pn ≈ 1 - (ln(2N) -ln(N)) = 1- ln(2) = 0.30685**
