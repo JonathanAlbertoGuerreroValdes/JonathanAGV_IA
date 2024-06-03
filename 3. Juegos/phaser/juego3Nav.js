@@ -29,7 +29,7 @@ var statusRigth, statusLeft, statusBack, statusStart;
 var juego = new Phaser.Game(w, h, Phaser.CANVAS, '', { preload: preload, create: create, update: update, render:render});
 
 function preload() {
-    juego.load.image('fondo', 'assets/game/fondo.jpg');
+    juego.load.image('fondo', 'assets/game/fondoEspacio.png');
     juego.load.spritesheet('mono', 'assets/sprites/altair.png',32 ,48);
     juego.load.image('nave', 'assets/game/ufo.png');
     juego.load.image('bala', 'assets/sprites/purple_ball.png');
