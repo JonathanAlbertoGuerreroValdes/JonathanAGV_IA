@@ -16,7 +16,7 @@ var autoMode = false
 var juego = new Phaser.Game(w, h, Phaser.CANVAS, '', {preload: preload, create: create, update: update, render: render})
 
 function preload() {
-  juego.load.image('fondo', 'assets/game/fondo.jpg')
+  juego.load.image('fondo', 'assets/game/NewC.png')
   juego.load.spritesheet('mono', 'assets/sprites/altair.png', 32, 48)
   juego.load.image('menu', 'assets/game/menu.png')
   juego.load.image('bala', 'assets/sprites/purple_ball.png')
