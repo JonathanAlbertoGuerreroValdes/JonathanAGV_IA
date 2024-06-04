@@ -287,7 +287,7 @@ function mPausa(event){
                 modoAuto = false;
             }else if (mouse_x >=menu_x1 && mouse_x <=menu_x2 && mouse_y >=menu_y1+90 && mouse_y <=menu_y2) {
                 if(!eCompleto) {
-                    console.log("---------- DATOS DE ENTRENAMIENTO ---------- \n",
+                    console.log("-------- DATOS DE ENTRENAMIENTO -------- \n",
                     "Datos obtenidos para el entrenamiento:  "+ datosEntrenamiento.length +" valores" );
                     redNeuronal();
                     eCompleto=true;
@@ -373,15 +373,12 @@ function update() {
 
     if ((Math.abs(jugador.position.x - 50) < 1) && (regreRight == true) && (statusRigth==1)){
         jugador.position.x = 50;
+        
         regreRight = false;
-        statusRigth = 0;
-        statusLeft = 1;
-        despDerTiempo = 0;
+        statusRigth = 0, statusLeft = 1, despDerTiempo = 0;
 
         regreBack = false;
-        statusBack = 0;
-        statusStart = 1;
-        despAtrTiempo = 0;
+        statusBack = 0, statusStart = 1, despAtrTiempo = 0;
     }
 
     if(statusRigth==1 && regreRight == false){
@@ -407,14 +404,15 @@ function update() {
 
     if ((Math.abs(jugador.position.x - 50) < 1) && (regreBack == true) && (statusBack==1)){
         jugador.position.x = 50;
+        
         regreRight = false;
-        statusRigth = 0;
-        statusLeft = 1;
+        statusRigth = 0, statusLeft = 1;
+
         despDerTiempo = 0;
 
         regreBack = false;
-        statusBack = 0;
-        statusStart = 1;
+        statusBack = 0, statusStart = 1;
+
         despAtrTiempo = 0;
     }
 
