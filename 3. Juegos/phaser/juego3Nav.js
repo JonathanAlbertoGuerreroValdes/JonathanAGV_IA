@@ -109,7 +109,7 @@ function create() {
 
 //DISPARO DE LADO
 function shoot1(){
-    veloB1 =  -1 * velocidadRandom(150,400);
+    veloB1 =  -1 * velocidadRandom(150,400); //Formula de fisica que es estadnar y no se puede mofidicar, ayuda a la velocidad de la bala
     bala.body.velocity.y = 0 ;
     bala.body.velocity.x = veloB1 ;
     balaD=true;
@@ -176,7 +176,7 @@ function movingtoBack(){
 
 
 function redNeuronal(){
-    nnEntrenamiento.train(datosEntrenamiento, {rate: 0.0003, iterations: 10000, shuffle: true});
+    nnEntrenamiento.train(datosEntrenamiento, {rate: 0.0003, iterations: 10000, shuffle: true});// manejo de las interacciones a la red
 }
 
 //DATOS DEL ENTRENAMIENTO DE LA BALA DE LADO
