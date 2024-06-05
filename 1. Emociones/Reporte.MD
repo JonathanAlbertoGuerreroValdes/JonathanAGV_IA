@@ -13,7 +13,7 @@ En los cuales se crearon carpetas con ciertas cantidades de imagenes, para que e
 
 ## Importación de Librerías
 
-Se importan librerías esenciales para el procesamiento de datos, manipulación de imágenes y construcción de la CNN.
+Se importan librerías esenciales para el procesamiento de datos, manipulación de imágenes y construcción del XML de Emociones.
 
 ## Carga del Conjunto de Imágenes
 
