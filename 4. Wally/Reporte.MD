@@ -61,5 +61,5 @@ Este script en Python utiliza OpenCV para detectar a Wally en una imagen. La det
 
 ## Conlcusión
 
-Como logramos ver, hay una seccion donde hay parametros, en estos parametros el:
-__FactorScale, minSize, minNeighbors__, nos ayudan para encontrar a wally, cuando se da una imagen al cargar este codigo, estos nos ayudan a la presision para encontrar a Wally. En pocas palabras, para encontrar a Wally a veces hay que jugar un poco con estos factores.
+Como logramos ver, hay una seccion donde hay parametros, los cuales son:
+__FactorScale, minSize, minNeighbors__, nos ayudan para encontrar a wally, cuando se da una imagen al cargar este codigo, estos nos ayudan a la presision para encontrar a Wally. En pocas palabras, para encontrar a Wally a veces hay que jugar un poco con estos factores y asi poder encontrarlo, hay que mencionar que pueden salir mas de 2 recuadros, el chiste es jugar con las variables mencionadas para que estos reduscan.
